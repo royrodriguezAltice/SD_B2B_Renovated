@@ -1,0 +1,390 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Service Delivery B2B" />
+    <title>@ViewData["Title"] - Service Delivery B2B</title>
+
+    <!--  CSS Files -->
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Cabecera -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <!-- Logo -->
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn" style="margin-right: 25px;"></i>
+
+            <a class="logo d-flex align-items-center">
+                <img src="~/assets/img/favicon.png" alt="Logo Altice" id="logo-altice">
+                <span class="d-none d-lg-block">SD B2B</span>
+            </a>
+        </div>
+        <!-- End Logo -->
+        
+        <!-- Profile Nav -->
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <li class="nav-item dropdown pe-3">
+                    <!-- Icono de Perfil -->
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="~/assets/img/porfile-user.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+                    </a>
+                    <!-- End Icono de Perfil -->
+                    
+                    <!-- Profile Dropdown Items -->
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            @if (User?.Identity?.IsAuthenticated == true) {
+                                <h6>@User.Identity.Name</h6> 
+                            }
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a asp-controller="TbUsuarios" asp-action="ConfigCuenta" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-gear"></i>
+                                <span>Configuración</span>
+                            </a>
+                        </li>
+                        <li></li>
+                        <li>
+                            <a asp-controller="Acceso" asp-action="Salir" class="dropdown-item d-flex align-items-center">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span asp-controller="Acesso" asp-action="Salir">Cerrar Sesión</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Profile Dropdown Items -->
+                </li>
+                <!-- End Profile Nav -->
+            </ul>
+        </nav>
+    </header>
+    <!-- End Cabecera -->
+    
+    <!-- Menu Lateral -->
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <!-- Dashboard Nav -->
+            <li class="nav-item">
+                <a class="nav-link" style="justify-content: center;" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+            </li>
+            <!-- End Dashboard Nav -->
+
+            @if (User.IsInRole("ADM") || User.IsInRole("PMO"))
+            {
+                <!-- Gestión de Proyectos B2B Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#pmo-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-menu-button-wide"></i><span>Gestión PMO</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    
+                    <ul id="pmo-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="PMO"> Gestión Proyectos B2B </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Penalidad Const. B2B</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Proyectos Macro B2B</span>
+                            </a>
+                        </li>
+                </ul>
+                </li>
+                <!-- End Gestión de Proyectos B2B Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("PC"))
+            {
+                <!-- Gestión de Pico Celda Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#picocelda-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-bar-chart"></i><span>Gestión Pico Celda</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="picocelda-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Instalación</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Base Instalada</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Gestión de Pico Celda Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("PROV"))
+            {
+                <!-- Gestión de Provisioning Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#provisioning-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-file-earmark-bar-graph"></i><span>Gestión Provisioning</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="provisioning-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        @if (User.HasClaim(c => c.Type == "Access" && c.Value == "PROV-ESCRITURA") || User.IsInRole("ADM"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="ControlOC">Control OC</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbOcs" asp-action="OrdenesPendientes"><i class="bi bi-circle"></i>Ordenes Pendientes</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-circle"></i>Consultas</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Control de Casos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" data-bs-target="#sipTrunking-nav" data-bs-toggle="collapse" href="#">
+                                    <span>Gestión SipTrunking</span><i class="bi bi-chevron-down ms-auto"></i>
+                                </a>
+
+                                <ul id="sipTrunking-nav" class="nav-content collapse ">
+                                    <li>
+                                        <a asp-area="" asp-controller="" asp-action="Privacy">Adicionar DID</a>
+                                    </li>
+                                    <li>
+                                        <a asp-area="" asp-controller="" asp-action="Create">Suspender y Reconectar</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End Gestión SipTrunking Nav -->
+                        }
+                        else if (User.HasClaim(c => c.Type == "Access" && c.Value == "PROV-LECTURA") || User.IsInRole("ADM"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="ControlOC_ReadOnly">Control OC</a>
+                            </li>
+                        }
+                    </ul>
+                </li>
+                <!-- End Gestión de Provisioning Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("FCL"))
+            {
+                <!-- Admin. Facilidades Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#facilidades-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-card-checklist"></i><span>Admin. Facilidades</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="facilidades-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a asp-area="" asp-controller="TbOcs" asp-action="Index">GPON</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="TbOcs" asp-action="Create">SITE</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Admin. Facilidades Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("GINV"))
+            {
+                <!-- Gestión Inventario Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#inventario-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-clipboard-data"></i><span>Gestión Inventario</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="inventario-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Inventario SD LDV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Código de inventario</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Requisiciones</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Gestión Inventario Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("ADMPR"))
+            {
+                <!-- Admin. de presupuestos Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#presupuesto-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-bar-chart-steps"></i><span>Admin. Presupuestos</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="presupuesto-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        @if (User.IsInRole("ADM"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="TbProyectoes" asp-action="ControlProyectos">Presupuestos</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbRequisicions" asp-action="ControlRequisicion">Requisiciones/PO's</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbRecepcionCs" asp-action="ControlRecepcionC">Conduces</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbTransferenciums" asp-action="ControlTransferencia">Transferencias</a>
+                            </li>
+                        } 
+                        else if (User.HasClaim(c => c.Type == "Access" && c.Value == "ADMPR-ESCRITURA") || User.IsInRole("ADM"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="TbProyectoes" asp-action="Proyectos_ReadOnly">Presupuestos</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbRequisicions" asp-action="ControlRequisicion">Requisiciones/PO's</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbRecepcionCs" asp-action="ControlRecepcionC">Conduces</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbTransferenciums" asp-action="ControlTransferencia">Transferencias</a>
+                            </li>
+                        }
+                        else if (User.HasClaim(c => c.Type == "Access" && c.Value == "ADMPR-LECTURA") || User.IsInRole("ADM"))
+                        {
+                            <li>
+                                <a asp-area="" asp-controller="TbRequisicions" asp-action="REQ_PO_ReadOnly">Requisiciones/PO's</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="TbRecepcionCs" asp-action="Conduce_ReadOnly">Conduces</a>
+                            </li>
+                        }
+                    </ul>
+                </li>
+                <!-- End Admin. de presupuestos Nav -->
+            }
+            @if (User.IsInRole("ADM") || User.IsInRole("Reportes"))
+            {
+                <!-- Reportes Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#reportes-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-journal-text"></i><span>Reportes</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="reportes-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-circle"></i><span>Asignación de IP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- End Reportes Nav -->
+            }
+            <li class="nav-heading">Configuraciones</li>
+            @if (User.IsInRole("ADM"))
+            {
+                <!-- Administracion Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#administracion-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-person"></i><span>Administración</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+
+                    <ul id="administracion-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <a class="nav-link collapsed" asp-area="" asp-controller="TbUsuarios" asp-action="ListaUsuarios"> Control Usuarios </a>
+                        <a class="nav-link collapsed" asp-area="" asp-controller="TbUsuarios" asp-action="Create"> Nuevo Usuario </a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>Seguimiento de Casos</span>
+                    </a>
+                </li>
+                <!-- End Administracion Nav -->
+            }
+
+            @* 
+            @if (User.IsInRole("ADM") || User.IsInRole("PROV") || User.IsInRole("ADMPR") || 
+                 User.IsInRole("PMO") || User.IsInRole("PC") || User.IsInRole("GINV") || 
+                 User.IsInRole("FCL") || User.IsInRole("Reportes")
+                 User.HasClaim(c => c.Type == "Access" && c.Value == "PMO-LECTURA") || User.HasClaim(c => c.Type == "Access" && c.Value == "PC-LECTURA") ||
+                 User.HasClaim(c => c.Type == "Access" && c.Value == "PROV-LECTURA") || User.HasClaim(c => c.Type == "Access" && c.Value == "FCL-LECTURA") ||
+                 User.HasClaim(c => c.Type == "Access" && c.Value == "GINV-LECTURA") || User.HasClaim(c => c.Type == "Access" && c.Value == "ADMPR-LECTURA")) {
+                    <li class="nav-item">
+                        <a asp-controller="TbUsuarios" asp-action="CambiarClave" class="nav-link collapsed">
+                            <i class="bi bi-gear"></i>
+                            <span>Cambiar Contraseña</span>
+                        </a>
+                    </li>
+            } 
+            *@
+
+            @if (User.IsInRole("PROV"))
+            {
+                <!-- Cerrar Conexion -->
+                <li class="nav-item">
+                    <button type="button" id="cerrarConexion" class="nav-link collapsed">
+                        <i class="bi bi-x-circle-fill"></i>
+                        <span>Cerrar Conexión</span>
+
+                        <div class="modal fade" id="modalConexion" tabindex="-1" aria-labelledby="exampleModalAlerta" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="alert alert-success">La conexión se ha cerrado con exito</div>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+                <!-- End Cerrar Conexion -->
+            }
+        </ul>
+    </aside>
+    <!-- End Menu Lateral -->
+    
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- End Contenedor Principal -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            <p><strong><span>&copy; @DateTime.Now.Year - Service Delivery B2B</span></strong></p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+    <!-- JS Files -->
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script> var isProv = @User.IsInRole("PROV").ToString().ToLower(); </script>
+
+    <!--  Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

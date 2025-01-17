@@ -1,0 +1,11 @@
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\SD.Application.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\SD.Application.deps.json
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\SD.Application.pdb
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\AutoMapper.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\FluentValidation.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\Microsoft.Extensions.Options.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\Microsoft.Extensions.Primitives.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\Newtonsoft.Json.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\SD.Domain.dll
+\\orange.com.do\data\RRA\Groupware\B2B Provisioning\SD B2B\SD.Domain.pdb

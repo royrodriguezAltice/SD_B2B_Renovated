@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.api\\views\\access\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|solutionrelative:sd.api\\views\\access\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.api\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|solutionrelative:sd.api\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\provisioning\\control_oc\\oc\\services\\ocservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\provisioning\\control_oc\\oc\\services\\ocservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\interfaces\\services\\provisioning\\oc\\iocservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\interfaces\\services\\provisioning\\oc\\iocservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\helpers\\files\\filesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\helpers\\files\\filesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\provisioning\\control_oc\\oc\\validators\\create\\createocvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\provisioning\\control_oc\\oc\\validators\\create\\createocvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\provisioning\\control_oc\\template\\services\\loopbacktemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\provisioning\\control_oc\\template\\services\\loopbacktemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\admin\\acceso\\service\\accesoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\admin\\acceso\\service\\accesoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\admin\\user\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\admin\\user\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\interfaces\\services\\provisioning\\templates\\itemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\interfaces\\services\\provisioning\\templates\\itemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\interfaces\\services\\provisioning\\templates\\iservicetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\interfaces\\services\\provisioning\\templates\\iservicetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\interfaces\\services\\provisioning\\templates\\ivpntemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\interfaces\\services\\provisioning\\templates\\ivpntemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.application\\interfaces\\services\\provisioning\\templates\\iloopbacktemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6BB49F-4E43-4548-9C07-DD0F1E0A5D2B}|SD.Application\\SD.Application.csproj|solutionrelative:sd.application\\interfaces\\services\\provisioning\\templates\\iloopbacktemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|c:\\users\\royrodriguez\\desktop\\1 - desarrollo sd_b2b\\service_delivery_b2b_renovated\\sd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAAE79F9-FC6C-4EB3-A8C2-8A9775845F7E}|SD.API\\SD.API.csproj|solutionrelative:sd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Views\\Access\\Index.cshtml",
+              "RelativeDocumentMoniker": "SD.API\\Views\\Access\\Index.cshtml",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Views\\Access\\Index.cshtml",
+              "RelativeToolTip": "SD.API\\Views\\Access\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-14T21:06:42.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "SD.API\\Controllers\\AccessController.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "SD.API\\Controllers\\AccessController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAADgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:06:31.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOcService.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\OC\\IOcService.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Interfaces\\Services\\Provisioning\\OC\\IOcService.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\OC\\IOcService.cs",
+              "RelativeToolTip": "SD.Application\\Interfaces\\Services\\Provisioning\\OC\\IOcService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T15:20:19.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FilesManager.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Helpers\\Files\\FilesManager.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Helpers\\Files\\FilesManager.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Helpers\\Files\\FilesManager.cs",
+              "RelativeToolTip": "SD.Application\\Helpers\\Files\\FilesManager.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAG0AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:51:20.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateOcValidator.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\OC\\Validators\\Create\\CreateOcValidator.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Provisioning\\Control_OC\\OC\\Validators\\Create\\CreateOcValidator.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\OC\\Validators\\Create\\CreateOcValidator.cs",
+              "RelativeToolTip": "SD.Application\\Provisioning\\Control_OC\\OC\\Validators\\Create\\CreateOcValidator.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:43:05.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OcService.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\OC\\Services\\OcService.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Provisioning\\Control_OC\\OC\\Services\\OcService.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\OC\\Services\\OcService.cs",
+              "RelativeToolTip": "SD.Application\\Provisioning\\Control_OC\\OC\\Services\\OcService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:41:10.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccesoService.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Admin\\Acceso\\Service\\AccesoService.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Admin\\Acceso\\Service\\AccesoService.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Admin\\Acceso\\Service\\AccesoService.cs",
+              "RelativeToolTip": "SD.Application\\Admin\\Acceso\\Service\\AccesoService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAWwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T21:20:05.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Admin\\User\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Admin\\User\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Admin\\User\\Services\\UserService.cs",
+              "RelativeToolTip": "SD.Application\\Admin\\User\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T21:19:59.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoopbackTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\Template\\Services\\LoopbackTemplate.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Provisioning\\Control_OC\\Template\\Services\\LoopbackTemplate.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Provisioning\\Control_OC\\Template\\Services\\LoopbackTemplate.cs",
+              "RelativeToolTip": "SD.Application\\Provisioning\\Control_OC\\Template\\Services\\LoopbackTemplate.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:27:35.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITemplates.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ITemplates.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ITemplates.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ITemplates.cs",
+              "RelativeToolTip": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ITemplates.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:26:40.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IServiceTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IServiceTemplate.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IServiceTemplate.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IServiceTemplate.cs",
+              "RelativeToolTip": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IServiceTemplate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:26:07.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IVPNTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IVPNTemplate.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IVPNTemplate.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IVPNTemplate.cs",
+              "RelativeToolTip": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\IVPNTemplate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:23:55.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ILoopbackTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ILoopbackTemplate.cs",
+              "RelativeDocumentMoniker": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ILoopbackTemplate.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ILoopbackTemplate.cs",
+              "RelativeToolTip": "SD.Application\\Interfaces\\Services\\Provisioning\\Templates\\ILoopbackTemplate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:08:27.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Program.cs",
+              "RelativeDocumentMoniker": "SD.API\\Program.cs",
+              "ToolTip": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.API\\Program.cs",
+              "RelativeToolTip": "SD.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T21:25:28.34Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

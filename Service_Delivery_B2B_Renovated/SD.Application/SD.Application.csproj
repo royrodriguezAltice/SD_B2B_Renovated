@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Admin\Acceso\AutoMapperProfile\" />
+    <Folder Include="Admin\Acceso\Exceptions\" />
+    <Folder Include="Admin\Acceso\Validators\" />
+    <Folder Include="Admin\User\Validators\" />
+    <Folder Include="Adm_Presupuestos\Conduces\" />
+    <Folder Include="Adm_Presupuestos\Common\" />
+    <Folder Include="Adm_Presupuestos\Requisiciones\AutoMappers\" />
+    <Folder Include="Adm_Presupuestos\Requisiciones\DTOs\" />
+    <Folder Include="Adm_Presupuestos\Requisiciones\Exceptions\" />
+    <Folder Include="Adm_Presupuestos\Requisiciones\Services\" />
+    <Folder Include="Adm_Presupuestos\Transferencias\" />
+    <Folder Include="Adm_Presupuestos\Presupuestos\" />
+    <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Provisioning\Control_OC\Template\AutoMappers\" />
+    <Folder Include="Provisioning\Control_OC\Template\Exceptions\" />
+    <Folder Include="Provisioning\Control_OC\Template\DTOs\" />
+    <Folder Include="Provisioning\Control_OC\Template\Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.1.1" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SD.Domain\SD.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

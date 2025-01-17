@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "o+BsrKMY3im4UsGtghbn31zulGMfpXB5LwrYQIEB22jP7Xbbvk+8fi66exwaoF/uCq3WMm9l2+rh5a3A1Xre2Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\royrodriguez\\Desktop\\1 - Desarrollo SD_B2B\\Service_Delivery_B2B_Renovated\\SD.Domain\\SD.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\royrodriguez\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
