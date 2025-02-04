@@ -13,7 +13,7 @@ namespace SD.Application.Interfaces.Services.Provisioning.OC
 	{
 		#region Get
 		Task<GetOC> GetOcByOcAsync(string oc); 
-		Task<GetOC> GetOcByIdAsync(int id); 
+		Task<GetOcDTO> GetOcByIdAsync(int id); 
 		Task<List<GetOC>> GetAllOcAsync();
 		#endregion
 		#region Add

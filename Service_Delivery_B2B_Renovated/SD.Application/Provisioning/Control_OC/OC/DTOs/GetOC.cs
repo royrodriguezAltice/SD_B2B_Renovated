@@ -36,7 +36,8 @@ namespace SD.Application.Provisioning.Control_OC.OC.DTOs
 										string? IpIspMask,
 										string? IpClienteWAg,
 										string? IpClienteWMask,
-										string? Ttk,
+										string? IpClienteLMask,
+                                        string? Ttk,
 										string? FechaSolicitudIng,
 										string? FechaRespuestaIng,
 										string? DescripOc,
@@ -70,7 +71,9 @@ namespace SD.Application.Provisioning.Control_OC.OC.DTOs
 										string? CoordenadasMangaY, //Coordenadas de Manga solo para GPON
 										string? CoordenadasMangaX, //Coordenadas de Manga solo para GPON
 										string? Site, //FO P2P
-										string? Serial_ONT);
+										string? Serial_ON,
+										string? ApnId,
+										TbApn? ApnData);
 
 		public record GetOcIntAsym1IPDTO(int Id,
 										DateOnly? Fecha,

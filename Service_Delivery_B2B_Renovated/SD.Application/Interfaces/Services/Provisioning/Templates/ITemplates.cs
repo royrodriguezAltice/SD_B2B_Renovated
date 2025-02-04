@@ -8,6 +8,6 @@ namespace SD.Application.Interfaces.Services.Provisioning.Templates
 {
     public interface ITemplates
     {
-        Task<string> GenerateTemplate();
+        string GenerateTemplate();
     }
 }

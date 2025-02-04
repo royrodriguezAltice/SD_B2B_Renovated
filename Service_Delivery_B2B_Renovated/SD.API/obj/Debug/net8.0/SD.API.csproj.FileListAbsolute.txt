@@ -64,3 +64,4 @@ C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovat
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.API\obj\Debug\net8.0\SD.API.pdb
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.API\obj\Debug\net8.0\SD.API.genruntimeconfig.cache
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.API\obj\Debug\net8.0\ref\SD.API.dll
+C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.API\obj\Debug\net8.0\SD.API.sourcelink.json

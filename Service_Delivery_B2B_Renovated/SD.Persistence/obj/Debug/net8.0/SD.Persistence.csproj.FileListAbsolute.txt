@@ -17,3 +17,4 @@ C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovat
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Persistence\obj\Debug\net8.0\SD.Persistence.pdb
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Persistence\obj\Debug\net8.0\SD.Persistence.genruntimeconfig.cache
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Persistence\obj\Debug\net8.0\ref\SD.Persistence.dll
+C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Persistence\obj\Debug\net8.0\SD.Persistence.sourcelink.json

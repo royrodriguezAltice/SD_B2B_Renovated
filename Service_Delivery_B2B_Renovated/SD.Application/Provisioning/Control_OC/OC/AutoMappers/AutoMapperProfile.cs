@@ -26,12 +26,16 @@ namespace SD.Application.Provisioning.Control_OC.OC.AutoMappers
 			
 			CreateMap<TbOc, GetOcSIPDatosDTO>();
 
+			CreateMap<TbOc, UpdateOC>();
+
 			CreateMap<GetOcDTO, CreateOcIntAsym1IPDTO>();
 
 			CreateMap<GetOcDTO, CreateOcAPNDTO>();
 			
 			CreateMap<GetOcDTO, CreateOcSIPDatosDTO>();
 
+			CreateMap<GetOcDTO, UpdateOC>();
+			
 		}
 	}
 }

@@ -21,7 +21,6 @@
     <Folder Include="Adm_Presupuestos\Presupuestos\" />
     <Folder Include="Interfaces\Repositories\" />
     <Folder Include="Provisioning\Control_OC\Template\AutoMappers\" />
-    <Folder Include="Provisioning\Control_OC\Template\Exceptions\" />
     <Folder Include="Provisioning\Control_OC\Template\DTOs\" />
     <Folder Include="Provisioning\Control_OC\Template\Validators\" />
   </ItemGroup>

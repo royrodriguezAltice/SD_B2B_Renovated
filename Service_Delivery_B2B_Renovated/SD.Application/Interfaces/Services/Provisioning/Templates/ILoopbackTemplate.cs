@@ -30,6 +30,6 @@ namespace SD.Application.Interfaces.Services.Provisioning.Templates
 
         #endregion
 
-        Task<string> CreateTemplate(string noEquipment);
+        string CreateTemplate(string noEquipment);
     }
 }

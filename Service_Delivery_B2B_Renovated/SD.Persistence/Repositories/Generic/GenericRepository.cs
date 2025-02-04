@@ -21,6 +21,18 @@ namespace SD.Persistence.Repositories.Generic
 			_dbSet = _sdB2Bcontext.Set<TModel>();
 		}
 
+		public async Task NoTrackingBehaivour()
+		{
+            try
+            {
+				_sdB2Bcontext.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            }
+            catch
+            {
+                throw;
+            };
+        }
+
 		public async Task<List<TModel>> GetEverythingAsync()
 		{
 			try

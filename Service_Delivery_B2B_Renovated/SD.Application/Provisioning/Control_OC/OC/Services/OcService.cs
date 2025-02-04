@@ -12,6 +12,7 @@ using SD.Domain.Entities.Provisioning.Control_OC.Oc;
 using SD.Domain.Enums.Common.Files;
 using SD.Domain.Enums.Provisioning.Control_OC;
 using SD.Domain.Interfaces.Repositories.Generic;
+using SD.Domain.Interfaces.Repositories.Provisioning.Control_OC;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -24,13 +25,13 @@ namespace SD.Application.Provisioning.Control_OC.OC.Services
 {
 	public class OcService : IOcService
 	{
-		private readonly IGenericRepository<TbOc> _tbOcRepository;
+		private readonly IOcRepository<TbOc> _tbOcRepository;
 		private readonly IMapper _mapper;
 		private readonly IFilesManager _filesManager;
 
 		public OcService(IGenericRepository<TbOc> tbOcRepository, IMapper mapper)
 		{
-			_tbOcRepository = tbOcRepository;
+			_tbOcRepository = (IOcRepository<TbOc>?)tbOcRepository;
 			_mapper = mapper;
 		}
 
@@ -63,7 +64,9 @@ namespace SD.Application.Provisioning.Control_OC.OC.Services
 								var createOcAPNValidator = new CreateOcAPNValidator();
 								validationResult = createOcAPNValidator.Validate(_mapper.Map<CreateOcAPNDTO>(oc));
 
-								break;
+                                oc.ApnData = await _tbOcRepository.GetOcApnDataAsync(oc.Oc);
+
+                                break;
 
 							case OcProducts.SIPDATOS:
 
@@ -191,13 +194,13 @@ namespace SD.Application.Provisioning.Control_OC.OC.Services
 			};
 		}
 
-		public async Task<GetOC> GetOcByIdAsync(int id)
+		public async Task<GetOcDTO> GetOcByIdAsync(int id)
 		{
 			try
 			{
 				var oc = await _tbOcRepository.GetByIdAsync(id);
 
-				return oc == null ? throw new OcNotFoundException() : _mapper.Map<GetOC>(oc);
+				return oc == null ? throw new OcNotFoundException() : _mapper.Map<GetOcDTO>(oc);
 			}
 			catch
 			{
@@ -252,6 +255,8 @@ namespace SD.Application.Provisioning.Control_OC.OC.Services
 
 								var createOcAPNValidator = new UpdateOcAPNValidator();
 								validationResult = createOcAPNValidator.Validate(_mapper.Map<UpdateOC>(oc));
+
+								oc.ApnData = await _tbOcRepository.GetOcApnDataAsync(oc.Oc);
 
 								break;
 
@@ -363,5 +368,6 @@ namespace SD.Application.Provisioning.Control_OC.OC.Services
 				throw new GenerateNewOcFailedException();
 			}
 		}
-	}
+
+    }
 }

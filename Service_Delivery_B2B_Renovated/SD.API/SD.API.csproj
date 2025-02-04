@@ -19,8 +19,4 @@
     <ProjectReference Include="..\SD.Persistence\SD.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\v1\Domain\Provisioning\" />
-  </ItemGroup>
-
 </Project>

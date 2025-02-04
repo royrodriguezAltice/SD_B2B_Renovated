@@ -9,15 +9,16 @@ namespace SD.Application.Interfaces.Services.Provisioning.Templates
     public interface IServiceTemplate
     {
         #region AddLines
-        Task<string> AddLineHeader();
-        Task<string> AddLineDescriptionB2B();
-        Task<string> AddLineBandWith();
-        Task<string> AddLineInterface();
-        Task<string> AddLineRouteStatic();
-        Task<string> AddLineStatitics();
-        Task<string> AddLineTraficPolicy();
+        string AddLineHeader();
+        string AddJump();
+        string AddLineDescriptionB2B();
+        string AddLineBandWith();
+        string AddLineInterface();
+        string AddLineRouteStatic();
+        string AddLineStatitics();
+        string AddLineTraficPolicy();
         #endregion
 
-        Task<string> CreateTemplate();
+        string CreateTemplate();
     }
 }

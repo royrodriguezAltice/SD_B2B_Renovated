@@ -10,3 +10,4 @@ C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovat
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Domain\obj\Debug\net8.0\refint\SD.Domain.dll
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Domain\obj\Debug\net8.0\SD.Domain.pdb
 C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Domain\obj\Debug\net8.0\ref\SD.Domain.dll
+C:\Users\royrodriguez\Desktop\1 - Desarrollo SD_B2B\Service_Delivery_B2B_Renovated\SD.Domain\obj\Debug\net8.0\SD.Domain.sourcelink.json

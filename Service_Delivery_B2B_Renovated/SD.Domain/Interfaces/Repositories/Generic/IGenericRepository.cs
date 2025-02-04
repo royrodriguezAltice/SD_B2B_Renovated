@@ -9,7 +9,8 @@ namespace SD.Domain.Interfaces.Repositories.Generic
 {
     public interface IGenericRepository<TModel> where TModel : class
 	{
-		Task<TModel> GetByIdAsync(int id);
+		Task NoTrackingBehaivour();
+        Task<TModel> GetByIdAsync(int id);
 		Task<List<TModel>> GetEverythingAsync();
 		Task<TModel> CreateAsync(TModel model);
 		Task<TModel> UpdateAsync(TModel model, int id);
